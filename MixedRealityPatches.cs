@@ -106,6 +106,10 @@ namespace MixedRealityMod
 
         public override void OnUpdate()
         {
+            //TODO: Following section allows for updating ExternalCamera.cfg during play
+            //This is currently causing the external camera tracking to pick the headset as the tracked object somehow.
+
+            /*
             if (Time.frameCount % 80 == 0)
             {
 
@@ -124,6 +128,7 @@ namespace MixedRealityMod
 
 
             }
+            */
             base.OnUpdate();
         }
 
